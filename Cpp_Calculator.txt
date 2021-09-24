@@ -5,7 +5,7 @@ float const PI = 3.141593;
 float r, alan, cevre;
 float kenar1, kenar2, kenar3, sonuc;
 
-double toplam; //kullanýlan degiskenler
+double toplam; //kullanÄ±lan degiskenler
 		double s1, s2, s3, s4, s5;
 		double miktar;
 		double HOrtalama;
@@ -16,7 +16,7 @@ double toplam; //kullanýlan degiskenler
 		int islem;
 
 
-int faktoriyel(int x) { //faktöriyel kodlarý baslangýc
+int faktoriyel(int x) { //faktÃ¶riyel kodlarÄ± baslangÄ±c
 	int carp = 1;
 	for (int i = 1; i <= x; i++) {
 		carp = carp * i;
@@ -24,65 +24,65 @@ int faktoriyel(int x) { //faktöriyel kodlarý baslangýc
 	return carp;
 }
 void hesapmakinesi(){
-	enum islem {toplama=1,cýkarma,carpma,bolme,karekok,kuvvet,aritmetikOrtalama,geometrikOrtalama,harmonikOrtalama,trigonometri,daireAlanCevre,logaritma,hipotenus,mutlakDeger,faktoriyel,permutasyon,kombinasyon};
+	enum islem {toplama=1,cÄ±karma,carpma,bolme,karekok,kuvvet,aritmetikOrtalama,geometrikOrtalama,harmonikOrtalama,trigonometri,daireAlanCevre,logaritma,hipotenus,mutlakDeger,faktoriyel,permutasyon,kombinasyon};
 	int secim;
-	cout<<"ýslemi seçin"<<endl;
+	cout<<"Ä±slemi seÃ§in"<<endl;
 	cin>>secim;
 	switch(secim){
 	case toplama:
-				cout << "Kaç sayi ile islem yapilacak?" << endl;
+				cout << "KaÃ§ sayi ile islem yapilacak?" << endl;
 				cin >> miktar;
 
 				if (miktar == 2) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2;
 					toplam = s1 + s2;
 					cout << "Toplam:" << toplam << endl;
 				}
 				if (miktar == 3) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3;
 					toplam = s1 + s2 + s3;
 					cout << "Toplam:" << toplam << endl;
 				}
 				if (miktar == 4) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4;
 					toplam = s1 + s2 + s3 + s4;
 					cout << "Toplam:" << toplam << endl;
 				}
 				if (miktar == 5) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4 >> s5;
 					toplam = s1 + s2 + s3 + s4 + s5;
 					cout << "Toplam:" << toplam << endl;
 				}
 				break;
 
-	case cýkarma:
-				cout << "Kaç sayýyla iþlem yapýlacak?" << endl;
+	case cÄ±karma:
+				cout << "KaÃ§ sayÄ±yla iÅŸlem yapÄ±lacak?" << endl;
 				cin >> miktar;
 
 				if (miktar == 2) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2;
 					cikarma = s1 - s2;
 					cout << "Fark:" << cikarma << endl;
 				}
 				if (miktar == 3) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3;
 					cikarma = s1 - s2 - s3;
 					cout << "Fark:" << cikarma << endl;
 				}
 				if (miktar == 4) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4;
 					cikarma = s1 - s2 - s3 - s4;
 					cout << "Fark:" << cikarma << endl;
 				}
 				if (miktar == 5) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4 >> s5;
 					cikarma = s1 - s2 - s3 - s4 - s5;
 					cout << "Fark:" << cikarma << endl;
@@ -90,29 +90,29 @@ void hesapmakinesi(){
 				break;
 
 	case carpma:
-				cout << "Kaç sayýyla iþlem yapýlacak?" << endl;
+				cout << "KaÃ§ sayÄ±yla iÅŸlem yapÄ±lacak?" << endl;
 				cin >> miktar;
 
 				if (miktar == 2) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2;
 					carpim = s1 * s2;
 					cout << "Carpim:" << carpim << endl;
 				}
 				if (miktar == 3) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3;
 					carpim = s1 * s2 * s3;
 					cout << "Carpim:" << carpim << endl;
 				}
 				if (miktar == 4) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4;
 					carpim = s1 * s2 * s3 * s4;
 					cout << "Carpim:" << carpim << endl;
 				}
 				if (miktar == 5) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4 >> s5;
 					carpim = s1 * s2 * s3 * s4 * s5;
 					cout << "Carpim:" << carpim << endl;
@@ -121,138 +121,138 @@ void hesapmakinesi(){
 
 
 	case bolme:
-				cout << "Kaç sayýyla iþlem yapýlacak?" << endl;
+				cout << "KaÃ§ sayÄ±yla iÅŸlem yapÄ±lacak?" << endl;
 				cin >> miktar;
 
 				if (miktar == 2) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2;
 					bolum = s1 / s2;
-					cout << "Bölüm:" << bolum << endl;
+					cout << "BÃ¶lÃ¼m:" << bolum << endl;
 				}
 				if (miktar == 3) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3;
 					bolum = s1 / s2 / s3;
-					cout << "Bölüm:" << bolum << endl;
+					cout << "BÃ¶lÃ¼m:" << bolum << endl;
 				}
 				if (miktar == 4) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4;
 					bolum = s1 / s2 / s3 / s4;
-					cout << "Bölüm:" << bolum << endl;
+					cout << "BÃ¶lÃ¼m:" << bolum << endl;
 				}
 				if (miktar == 5) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4 >> s5;
 					bolum = s1 / s2 / s3 / s4 / s5;
-					cout << "Bölüm:" << bolum << endl;
+					cout << "BÃ¶lÃ¼m:" << bolum << endl;
 				}
 				break;
 
 	case karekok :
-				cout << "Sayýyý girin:" << endl;
+				cout << "SayÄ±yÄ± girin:" << endl;
 				cin >> s1;
-				cout << "Karekökü:" << sqrt(s1) << endl;
+				cout << "KarekÃ¶kÃ¼:" << sqrt(s1) << endl;
 				break;
 	case kuvvet:
-				cout << "Sayýlarý girin:" << endl;
+				cout << "SayÄ±larÄ± girin:" << endl;
 				cin >> s1 >> s2;
 				cout << "Kuvveti:" << pow(s1, s2) << endl;
 				break;
 	case aritmetikOrtalama:
-				cout << "Kaç sayi ile islem yapilacak?" << endl;
+				cout << "KaÃ§ sayi ile islem yapilacak?" << endl;
 				cin >> miktar;
 
 				if (miktar == 2) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2;
 					ortalama = (s1 + s2) / 2;
-					cout << "Ortalamasý:" << ortalama << endl;
+					cout << "OrtalamasÄ±:" << ortalama << endl;
 				}
 				if (miktar == 3) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3;
 					ortalama = (s1 + s2 + s3) / 3;
-					cout << "Ortalamasý:" << ortalama << endl;
+					cout << "OrtalamasÄ±:" << ortalama << endl;
 				}
 				if (miktar == 4) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4;
 					ortalama = (s1 + s2 + s3 + s4) / 4;
-					cout << "Ortalamasý:" << ortalama << endl;
+					cout << "OrtalamasÄ±:" << ortalama << endl;
 				}
 				if (miktar == 5) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4 >> s5;
 					ortalama = (s1 + s2 + s3 + s4 + s5) / 5;
-					cout << "Ortalamasý:" << ortalama << endl;
+					cout << "OrtalamasÄ±:" << ortalama << endl;
 				}
 				break;
 
 
 	case geometrikOrtalama:
-				cout << "Kaç sayýyla iþlem yapýlacak?" << endl;
+				cout << "KaÃ§ sayÄ±yla iÅŸlem yapÄ±lacak?" << endl;
 				cin >> miktar;
 
 				if (miktar == 2) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2;
-					cout << "Geometrik Ortalamasý:" << pow((s1 * s2), 1 / miktar)<< endl;
+					cout << "Geometrik OrtalamasÄ±:" << pow((s1 * s2), 1 / miktar)<< endl;
 				}
 				if (miktar == 3) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3;
-					cout << "Geometrik Ortalamasý:"
+					cout << "Geometrik OrtalamasÄ±:"
 							<< pow((s1 * s2 * s3), 1 / miktar) << endl;
 
 				}
 				if (miktar == 4) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4;
-					cout << "Geometrik Ortalamasý:"
+					cout << "Geometrik OrtalamasÄ±:"
 							<< pow((s1 * s2 * s3 * s4), 1 / miktar) << endl;
 				}
 				if (miktar == 5) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4 >> s5;
-					cout << "Geometrik Ortalamasý:"
+					cout << "Geometrik OrtalamasÄ±:"
 							<< pow((s1 * s2 * s3 * s4 * s5), 1 / miktar) << endl;
 				}
 				break;
 
 
 	case harmonikOrtalama:
-				cout << "Kaç sayi ile islem yapilacak?" << endl;
+				cout << "KaÃ§ sayi ile islem yapilacak?" << endl;
 				cin >> miktar;
 
 				if (miktar == 2) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2;
 					HOrtalama = miktar / ((1 / s1) + (1 / s2));
-					cout << "Harmonik Ortalamasý:" << HOrtalama << endl;
+					cout << "Harmonik OrtalamasÄ±:" << HOrtalama << endl;
 				}
 				if (miktar == 3) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3;
 					HOrtalama = miktar / ((1 / s1) + (1 / s2) + (1 / s3));
-					cout << "Harmonik Ortalamasý:" << HOrtalama << endl;
+					cout << "Harmonik OrtalamasÄ±:" << HOrtalama << endl;
 				}
 				if (miktar == 4) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4;
 					HOrtalama = miktar
 							/ ((1 / s1) + (1 / s2) + (1 / s3) + (1 / s4));
-					cout << "Harmonik Ortalamasý:" << HOrtalama << endl;
+					cout << "Harmonik OrtalamasÄ±:" << HOrtalama << endl;
 				}
 				if (miktar == 5) {
-					cout << "Sayýlarý girin:" << endl;
+					cout << "SayÄ±larÄ± girin:" << endl;
 					cin >> s1 >> s2 >> s3 >> s4 >> s5;
 					HOrtalama =
 							miktar
 							/ ((1 / s1) + (1 / s2) + (1 / s3) + (1 / s4)
 									+ (1 / s5));
-					cout << "Harmonik Ortalamasý:" << HOrtalama << endl;
+					cout << "Harmonik OrtalamasÄ±:" << HOrtalama << endl;
 				}
 				break;
 
@@ -260,7 +260,7 @@ void hesapmakinesi(){
 	case trigonometri:
 				double X, Y;
 
-				cout << "Açý girin: " << endl;
+				cout << "AÃ§Ä± girin: " << endl;
 				cin >> X;
 
 				Y = X;
@@ -273,19 +273,19 @@ void hesapmakinesi(){
 
 	case daireAlanCevre:
 
-				cout << "Yarýçapý Girin : ";
+				cout << "YarÄ±Ã§apÄ± Girin : ";
 				cin >> r;
 				alan = PI * r * r;
 				cevre = 2 * (PI * r);
-				cout << "Alaný : " << alan << endl;
-				cout << "Çevresi : " << cevre;
+				cout << "AlanÄ± : " << alan << endl;
+				cout << "Ã‡evresi : " << cevre;
 				break;
 
 
 	case logaritma:
 
 				cout << "   Logaritma Hesaplama " << endl;
-				cout << " Sayýyý Giriniz: ";
+				cout << " SayÄ±yÄ± Giriniz: ";
 				cin >> s1;
 				cout << " Logaritma: " << s1 << endl;
 				s1 = log10(s1);
@@ -302,7 +302,7 @@ void hesapmakinesi(){
 				cin >> kenar2;
 				kenar3 = pow(kenar1, 2) + pow(kenar2, 2);
 				sonuc = sqrt(kenar3);
-				cout << "Hipotenüs(c) = " << sonuc;
+				cout << "HipotenÃ¼s(c) = " << sonuc;
 				break;
 
 	case mutlakDeger:
@@ -312,7 +312,7 @@ void hesapmakinesi(){
 				break;
 
 	case faktoriyel:
-				cout << "faktoriyeli alýnacak sayiyi giriniz:" << endl;
+				cout << "faktoriyeli alÄ±nacak sayiyi giriniz:" << endl;
 				int f = 1;
 				cin >> f;
 				faktoriyel(f);
@@ -340,7 +340,7 @@ void hesapmakinesi(){
 				cout << "Verilen degerlerin kombinasyonu: " << c << endl;
 				break;
 	default:
-		cout<<"Tanýmlý degil!"<<endl;
+		cout<<"TanÄ±mlÄ± degil!"<<endl;
 	}
 }
 
@@ -351,52 +351,52 @@ int main() {
 	string sifre;
 	string robotTestiCevabi = "9";
 	string robotTesti;
-	cout << "Bu mukemmel hesap makinesine girmek için lütfen giris yapýnýz:"
+	cout << "Bu mukemmel hesap makinesine girmek iÃ§in lÃ¼tfen giris yapÄ±nÄ±z:"
 			<< endl;
-	cout << "kullanýcý adý:" << endl;
+	cout << "kullanÄ±cÄ± adÄ±:" << endl;
 	cin >> ad;
 	cout << "parola:" << endl;
 	cin >> sifre;
-	cout << "Lütfen robot olmadýgýnýzý Dogrulayýn ------1 3 5 7 ? 11----- ?="
+	cout << "LÃ¼tfen robot olmadÄ±gÄ±nÄ±zÄ± DogrulayÄ±n ------1 3 5 7 ? 11----- ?="
 			<< endl;
 	cin >> robotTesti;
 
 	if (kullaniciAdi == ad && password == sifre
 			&& robotTestiCevabi == robotTesti) {
-		cout << "Giriþ baþarýlý hesaplamanýn tadýný çýkarýn!" << endl << endl<< endl;
-		cout << "Lütfen yapmak istediðiniz iþlemi seçin:" << endl<<endl;
-		cout << "Toplama için 1'e basýn." << endl;
-		cout << "Çýkarma için 2'ye basýn." << endl;
-		cout << "Çarpma için 3'e basýn." << endl;
-		cout << "Bölme için 4'e basýn." << endl;
-		cout << "Karekök almak için 5'e basýn." << endl;
-		cout << "Kuvvet almak için 6'ya basýn." << endl;
-		cout << "Ortalama almak için 7'e basýn." << endl;
-		cout << "Geometrik ortalam almak için 8'e basýn." << endl;
-		cout << "Harmonik Ortalama Almak için 9'a basýn." << endl;
-		cout << "Cos Sin Tan almak için 10'a basýn." << endl;
-		cout << "Daire alan ve çevre hesaplamasý için 11'e basýn." << endl;
-		cout << "Logaritmasýný almak için 12'ye basýn." << endl;
-		cout << "Hipotenusunu almak için 13'e basýn." << endl;
+		cout << "GiriÅŸ baÅŸarÄ±lÄ± hesaplamanÄ±n tadÄ±nÄ± Ã§Ä±karÄ±n!" << endl << endl<< endl;
+		cout << "LÃ¼tfen yapmak istediÄŸiniz iÅŸlemi seÃ§in:" << endl<<endl;
+		cout << "Toplama iÃ§in 1'e basÄ±n." << endl;
+		cout << "Ã‡Ä±karma iÃ§in 2'ye basÄ±n." << endl;
+		cout << "Ã‡arpma iÃ§in 3'e basÄ±n." << endl;
+		cout << "BÃ¶lme iÃ§in 4'e basÄ±n." << endl;
+		cout << "KarekÃ¶k almak iÃ§in 5'e basÄ±n." << endl;
+		cout << "Kuvvet almak iÃ§in 6'ya basÄ±n." << endl;
+		cout << "Ortalama almak iÃ§in 7'e basÄ±n." << endl;
+		cout << "Geometrik ortalam almak iÃ§in 8'e basÄ±n." << endl;
+		cout << "Harmonik Ortalama Almak iÃ§in 9'a basÄ±n." << endl;
+		cout << "Cos Sin Tan almak iÃ§in 10'a basÄ±n." << endl;
+		cout << "Daire alan ve Ã§evre hesaplamasÄ± iÃ§in 11'e basÄ±n." << endl;
+		cout << "LogaritmasÄ±nÄ± almak iÃ§in 12'ye basÄ±n." << endl;
+		cout << "Hipotenusunu almak iÃ§in 13'e basÄ±n." << endl;
 		cout << "Mutlak deger almak icin 14'e bas." << endl;
-		cout << "Faktöriyel bulmak için 15'e bas." << endl;
-		cout << "Permütasyon almak icin 16'ya bas." << endl;
+		cout << "FaktÃ¶riyel bulmak iÃ§in 15'e bas." << endl;
+		cout << "PermÃ¼tasyon almak icin 16'ya bas." << endl;
 		cout << "Kombinasyon almak icin 17'ye bas." << endl;
 		hesapmakinesi();
 
 
 
 	} else if (kullaniciAdi != ad && password == sifre) {
-		cout << "kullanýcý adý hatalý";
+		cout << "kullanÄ±cÄ± adÄ± hatalÄ±";
 
 	} else if (kullaniciAdi == ad && password != sifre) {
-		cout << "sifre yanlýþ";
+		cout << "sifre yanlÄ±ÅŸ";
 
 	} else if (kullaniciAdi == ad && password == sifre && robotTestiCevabi != robotTesti) {
 		cout << "robotsun!" << endl;
 
 	} else {
-		cout << "giriþ reddedildi";
+		cout << "giriÅŸ reddedildi";
 
 	}
 	return 0;
